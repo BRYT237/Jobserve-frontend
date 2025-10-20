@@ -1,0 +1,120 @@
+.postM{
+    padding-inline: 3em;
+    padding-block: 1em;
+    
+}
+.cont{
+    display: flex;
+    flex-direction: column ;
+    gap: 1em;
+    margin-block: 2em;
+    /* flex-direction: column; */
+
+    input{
+        /* margin-block: 1em; */
+        /* margin-right: 2em; */
+        border-radius: 8px;
+        width: 220px;
+        height: 33px;
+        box-shadow: 1px 1px 3px 4px rgb(171, 237, 171);
+        outline: none;
+        padding-inline: 10px;
+        padding-block: 5px;
+        font-size: 15px;
+        
+
+    }
+
+   label{
+    background-color: rgba(85, 85, 85, 0.557);
+    width: 200px;
+    padding-inline: 5px;
+    padding-block: 8px;
+    border-radius: 11px;
+   }
+}
+
+#desc{
+    width: 45%;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px 4px rgb(171, 237, 171);
+    outline: none;
+    padding-inline: 10px;
+    padding-block: 5px;
+    font-size: 15px;
+}
+.postBut{
+    color: rgb(171, 237, 171);
+    background-color: black;
+    width: 100px;
+    padding-block: 5px;
+    border-radius: 8px;
+    margin-inline: 6em;
+}
+#reQ{
+        border-radius: 8px;
+        width: 60%;
+        box-shadow: 1px 1px 3px 4px rgb(171, 237, 171);
+        outline: none;
+        padding-inline: 10px;
+        padding-block: 5px;
+        font-size: 15px;
+}
+#respon{
+        border-radius: 8px;
+        width: 60%;
+        box-shadow: 1px 1px 3px 4px rgb(171, 237, 171);
+        outline: none;
+        padding-inline: 10px;
+        padding-block: 5px;
+        font-size: 15px;
+}
+.backA{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(171, 237, 171);
+    padding: 1em;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    
+}
+.backD{
+    margin-top: 1em;
+    margin-bottom: 2em;
+
+    span{
+        margin-left: 1em;
+    }
+}
+.H2P{
+    font-weight: 600;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+
+.modal-body{
+
+    form{
+
+        display: flex;
+    flex-direction: column;gap: 1em;
+
+    input{
+        border-radius: 11px;
+        height: 35px;
+        padding-inline: 1em;
+        box-shadow: 1px 1px 2px 2px rgb(171, 237, 171);
+    }
+
+    button{
+        width: 100px;
+        height: 30px;
+        background-color: rgb(171, 237, 171);
+        border-radius: 11px;
+        margin-inline: auto;
+    }
+            
+    }
+    
+}

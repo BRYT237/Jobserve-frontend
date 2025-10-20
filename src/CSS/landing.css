@@ -1,0 +1,106 @@
+.imgs{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-inline: auto;
+    gap: 1em;
+    margin-top: 4em;
+     
+
+    img{
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px 2px rgb(199, 245, 199);
+    }
+
+   
+}
+.par{
+    display: flex;
+    gap: 0.6em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 2em;
+
+     button{
+        background-color: black;
+        color: rgb(171, 237, 171);
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+    }
+   
+}
+
+.box1{
+    width: 500px;
+    height: 60px;
+    border: thin solid rgb(137, 167, 137);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 3px rgb(171, 237, 171);
+    margin-inline: auto;
+    margin-block: 1em;
+    padding-block: 8px;
+
+
+     input{
+            border-radius: 10px;
+            padding-inline: 5px;
+            width: 400px;
+            height: 40px;
+            outline-color: rgb(171, 237, 171);
+        }
+
+        i{
+            margin-inline: 1em;
+            
+        }
+
+}
+
+.box2{
+    width: 500px;
+    height: 60px;
+    border: thin solid rgb(137, 167, 137);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 3px rgb(171, 237, 171);
+    margin-inline: auto;
+    margin-block: 1em;
+     padding-block: 8px;
+    
+
+     input{
+            border-radius: 10px;
+            padding-inline: 5px;
+            width: 400px;
+            height: 40px;
+            outline-color: rgb(171, 237, 171);
+        }
+
+        
+        i{
+            margin-inline: 1em;
+        }
+
+
+}
+
+.findB{
+        background-color: black;
+        color: rgb(171, 237, 171);
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        margin-inline: 34em;
+        margin-block: 1em;
+}
+
+.big{
+    width: 100%;
+}
+.btn{
+    a{
+        color: rgb(171, 237, 171);
+        text-decoration: none;
+    }
+}

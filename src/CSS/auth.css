@@ -1,0 +1,61 @@
+.wrapS{
+    border: thin solid transparent;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    margin-block: 2em;
+    border-radius: 10px;
+    padding-inline: 1.5em;
+    box-shadow: 1px 1px 3px 4px rgb(171, 237, 171);
+
+    h2{
+        margin-inline: auto;
+        padding-top: 10px;
+    }
+
+        button{
+            background-color: black;
+            color: rgb(171, 237, 171);
+            width: 130px;
+            height: 30px;
+            border-radius: 10px;
+            margin-bottom: 1.5em;
+            margin-inline: 5em;
+        }
+
+    p{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding-bottom: 10px; 
+
+        a{
+            color: rgb(124, 237, 124);
+            text-decoration: underline;
+        }
+    }    
+}
+.inP{
+    border: thin solid rgb(171, 237, 171);
+    margin-block: 2em;
+    padding-inline: 0.7em;
+    padding-block: 0.2em;
+    border-radius: 10px;
+
+
+    input{
+        padding-inline: 1em;
+        outline: none;
+        border-radius: 10px;
+        padding-block: 0.2em;
+        width: 80%;
+        caret-color: rgb(171, 237, 171);
+        
+    }
+
+    
+}
+

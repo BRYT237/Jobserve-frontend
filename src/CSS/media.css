@@ -1,0 +1,55 @@
+@media screen and (max-width: 390px) {
+   
+    .mainA{
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+    }
+
+    .mainB{
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+    }
+    .nav{
+        padding-inline: 18px;
+    }
+
+    .main{
+        width: 100%;
+        padding-inline: 25px;
+    }
+
+    .par{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        div{
+            padding-inline: 1.5em;
+            line-height: 2em;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+        
+    }
+    
+  .wrapS{
+    button{
+        margin-inline: 2px;
+    }
+  }
+  
+  .newH{
+    width: 100px;
+  }
+
+  .navH{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+  
+
+}

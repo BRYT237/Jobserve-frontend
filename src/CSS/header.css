@@ -1,0 +1,47 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2em;
+    padding-block: 0.4em;
+}
+.mainA{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+
+    a{
+        margin-top: 1em;
+        border-right: 2px solid rgb(137, 167, 137);
+        height: 30px;
+        padding-right: 7px;
+        color: black;
+        text-decoration: none;
+    }
+    a:hover{
+        color: rgb(171, 237, 171);
+        border-bottom: thin solid rgb(171, 237, 171);
+    }
+}
+.mainB{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+
+    a{
+        margin-top: 1em;
+        border-right: 2px solid rgb(137, 167, 137);
+        height: 30px;
+        padding-right: 7px;
+        color: black;
+        text-decoration: none;
+    }
+    a:hover{
+        color: rgb(171, 237, 171);
+        border-bottom: thin solid rgb(171, 237, 171);
+    }
+}
+.head{
+    width: 100%;
+    border: thin solid rgb(137, 167, 137) ;
+    box-shadow: 0px 0px 3px 3px rgb(171, 237, 171);
+}
