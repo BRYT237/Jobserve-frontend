@@ -32,7 +32,7 @@ const EmployerLogin = () => {
     <div>
       <div className='contS'>
       <div className='wrapS'>
-       <h2>Login E!!</h2> 
+       <h2>Employer Login</h2> 
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className='inP'>
             <input type="email" {...register("email")} name="email" id="email" placeholder='Email'/>

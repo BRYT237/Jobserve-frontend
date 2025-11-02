@@ -12,6 +12,7 @@ export const JobContext = createContext()
 const JobProvider = ({ children }) => {
     const baseUrl = import.meta.env.VITE_BASE_URL
     const [jobs, setJobs] = useState([])
+    const [apply, setApply] = useState(false)
     // const [confirm, setConfirm] = useState(false)
     const [jobApp, SetJobApp] = useState([])
     const [showSingle, setShowSingle] = useState({});
@@ -116,7 +117,7 @@ const JobProvider = ({ children }) => {
     }
 
     const postApp = async (app) => {
-
+            setApply(false)
         try {
             const sendApp = new FormData();
 
@@ -135,11 +136,12 @@ const JobProvider = ({ children }) => {
 
             const resData = await res.json();
             console.log(resData);
-
+            setApply(true)
               if (resData.status == "Success") {
 
                 toast.success("Job Created Successfully.")
                 alert("Job Applied successfully!!")
+                localStorage.setItem("status", apply)
 
                 }
         } catch (error) {
@@ -173,6 +175,7 @@ const JobProvider = ({ children }) => {
         postApp,
         getApp,
         confirm,
+        apply,
         jobApp,
         save,
         jobs,

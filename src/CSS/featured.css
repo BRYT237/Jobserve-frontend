@@ -147,6 +147,11 @@
     line-height: 2em;
     border-bottom: 1.5px solid rgba(85, 85, 85, 0.557);
     padding-bottom: 1em;
+
+    p{
+        line-height: 2em;
+        width: 260px;
+    }
 }
 .reS{
     border-bottom: 1.5px solid rgba(85, 85, 85, 0.557);
@@ -157,7 +162,8 @@
     line-height: 2em;
 
     p{
-        width: 100px;
+        line-height: 2em;
+        width: 250px;
     }
 }
 .aPP{

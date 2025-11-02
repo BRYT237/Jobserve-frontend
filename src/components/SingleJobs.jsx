@@ -19,7 +19,7 @@ const SingleJobs = () => {
    
 
 
-  const { showSingle, displaySingleJobs, postApp } = useContext(JobContext);
+  const { showSingle, displaySingleJobs, postApp, apply } = useContext(JobContext);
   const { id } = useParams();
 
     const onSubmit = (app) =>{
@@ -84,7 +84,7 @@ const SingleJobs = () => {
         
            {/* <button className="butS">Apply now</button> */}
            <button type="button" className="btn butS" data-bs-toggle="modal" data-bs-target="#exampleModal">
-             Apply Now
+             { JSON.parse(localStorage.getItem("status")) === apply ? "Job Applied!!" : "Apply Now" }
         </button>
 
         </div>
@@ -104,12 +104,12 @@ const SingleJobs = () => {
           <p className="reqS">
             <h3>Requirements:</h3>
 
-            <span name="requirements">{showSingle?.requirements}</span>
+            <p name="requirements">{showSingle?.requirements}</p>
           </p>
           <p className="reS">
             <h3>Responsibilities:</h3>
 
-            <p name="responsibilities" id="resP">{showSingle?.responsibilities}</p>
+            <p name="responsibilities" id="resP"> {showSingle?.responsibilities}</p>
             </p>
         
         </div>

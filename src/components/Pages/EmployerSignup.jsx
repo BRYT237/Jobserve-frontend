@@ -40,7 +40,7 @@ const Signup2 = () => {
         return (
              <div className='contS'>
       <div className='wrapS'>
-        <h2>Signup</h2>
+        <h2>Employer Signup</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
              <div className='inP'>
                 <input type="email" {...register("email")} name="email" id="email" placeholder='Email-address'/>

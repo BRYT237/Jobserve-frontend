@@ -37,7 +37,8 @@ const AuthProvider = ({ children }) => {
             const resData = await res.json()
             console.log(resData)
             if (res.ok) {
-                toast.success("Welcome to JOBSERVE . Redirecting...")
+                alert("Welcome to JOBSERVE . Redirecting...")
+                navigate("/dash")
             }
         } catch (error) {
             console.log(error)
@@ -67,7 +68,7 @@ const AuthProvider = ({ children }) => {
             console.log(resData)
             if (res.ok) {
                 toast.success("Welcome to JOBSERVE . Redirecting...")
-                navigate("/login2")
+                navigate("/login2") 
             }
 
 
