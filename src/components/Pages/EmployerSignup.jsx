@@ -13,7 +13,7 @@ const signUpSchema = yup.object({
     lastName:  yup.string().required("First Name is Required"),
     phoneNumber: yup.string().required("Phone number is required").min(11, "Phone number must be 11 characters only"),
     email: yup.string().required("Email-address is required!!"),
-    password: yup.string().required("Password is required!!").min(11, "Password must be 11 characters only")
+    password: yup.string().required("Password is required!!").min(6, "Password must be 6 characters only")
 })
 
 const Signup2 = () => {

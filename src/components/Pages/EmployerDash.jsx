@@ -6,10 +6,10 @@ import { JobContext } from '../../Contexts/JobContext'
 
 const EmployerDash = () => {
 
-  const { displayJobs, jobs, displaySingleJobs, showSingle, getApp, jobApp } = useContext(JobContext)
+  const { displayJobs2, jobs, displaySingleJobs, showSingle, getApp, jobApp, deleteJobs } = useContext(JobContext)
 
     useEffect(()=> {
-      displayJobs(),
+      displayJobs2(),
       displaySingleJobs(),
       getApp()
     }, [])
@@ -30,6 +30,8 @@ const EmployerDash = () => {
               <h4>{jobApp.length}</h4>
             <h3>No. of Jobs Added:</h3>
               <h4>{jobs.length}</h4>
+            <h3>Delete Jobs...</h3>
+              <h4><button onClick={deleteJobs} id='bu'>Delete</button></h4>
           </div>
        
       </div>

@@ -11,6 +11,7 @@ const AuthProvider = ({ children }) => {
     const [logingIn, setLogingIn] = useState(false);
     const baseUrl = import.meta.env.VITE_BASE_URL
     const navigate = useNavigate();
+    const[posted, setPosted] = useState()
     const [user, setUser] = useState();
     const [employer, setEmployer] = useState();
 
@@ -23,7 +24,7 @@ const AuthProvider = ({ children }) => {
 
             return
         }
-        setSigningUp(true)
+        setSigningUp(false)
 
         try {
             const res = await fetch(`${baseUrl}/auth/`, {
@@ -36,6 +37,7 @@ const AuthProvider = ({ children }) => {
 
             const resData = await res.json()
             console.log(resData)
+            setSigningUp(true)
             if (res.ok) {
                 alert("Welcome to JOBSERVE . Redirecting...")
                 navigate("/dash")
@@ -82,7 +84,7 @@ const AuthProvider = ({ children }) => {
 
 
     const login = async (data) => {
-        setLogingIn(true)
+        setLogingIn(false)
 
         try {
             const res = await fetch(`${baseUrl}/auth/login`, {
@@ -97,7 +99,7 @@ const AuthProvider = ({ children }) => {
             console.log(resData);
             
             localStorage.setItem("token", resData.token)
-            
+            setLogingIn(true)
 
             if (res.ok) {
                 toast.success("Login successful.")
@@ -115,7 +117,7 @@ const AuthProvider = ({ children }) => {
     }
 
     const loginEmployer = async (data) =>{
-            setLogingIn(true)
+            setLogingIn(false)
 
         try {
             const res = await fetch(`${baseUrl}/employ/login`, {
@@ -128,10 +130,10 @@ const AuthProvider = ({ children }) => {
 
             const resData = await res.json();
             console.log(resData);
+            setPosted(resData._id)
+            localStorage.setItem("token2", resData.token)
             
-            localStorage.setItem("token", resData.token)
-            
-
+            setLogingIn(true)
             if (res.ok) {
                 toast.success("Login successful.")
                 // alert("Login successful.")
@@ -179,6 +181,7 @@ const AuthProvider = ({ children }) => {
     const value = {
         signingUp,
         user,
+        posted,
         setLogingIn,
         signupEmployer,
         signup,

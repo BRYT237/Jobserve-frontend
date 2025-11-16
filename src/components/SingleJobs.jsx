@@ -111,7 +111,11 @@ const SingleJobs = () => {
 
             <p name="responsibilities" id="resP"> {showSingle?.responsibilities}</p>
             </p>
-        
+
+
+          <p>
+            {showSingle._id}
+          </p>
         </div>
         
       </div>

@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { useForm } from 'react-hook-form'
 // import * as yup from "yup"
 import { JobContext } from '../../Contexts/JobContext'
+import {AuthContext} from '../../Contexts/AuthContext'
 // import { yupResolver } from '@hookform/resolvers/yup'
 import "../../CSS/job.css"
 
@@ -22,7 +23,8 @@ const PostJob = () => {
       maxWage: "",
       currency: "",
       requirements: "",
-      responsibilities: ""
+      responsibilities: "",
+      postedBy: ""
     }
 
   })
@@ -30,8 +32,11 @@ const PostJob = () => {
 
   const { PostJob } = useContext(JobContext)
 
+  const {posted} = useContext(AuthContext)
+
   const onSubmit = (data) => {
         PostJob(data)
+
   }
 
 
@@ -117,7 +122,7 @@ const PostJob = () => {
 
               <datalist id='curr'>
                 <option value="$"></option>
-                <option value="&#8358"></option>
+                <option value="NGN"></option>
               </datalist>
           </div>
           {/*  */}
@@ -133,6 +138,13 @@ const PostJob = () => {
 
           </div>
           {/*  */}
+
+          {/* <div className='cont'>
+              <label>Created-By:</label>
+             <textarea name="postedBy" id="">
+              {posted}
+             </textarea>
+          </div> */}
 
 
           <button className='postBut'>Add Job</button>

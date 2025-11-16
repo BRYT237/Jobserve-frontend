@@ -22,6 +22,23 @@ const JobProvider = ({ children }) => {
 
     const displayJobs = async () => {
         try {
+            const res = await fetch(`${baseUrl}/employ/get2`,
+                {
+                    method: "GET",
+                    headers: { "Content-Type": "application/json" }
+                })
+
+            const resData = await res.json()
+            
+            setJobs(resData.recieve || [])
+            
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    const displayJobs2 = async () => {
+        try {
             const res = await fetch(`${baseUrl}/employ/get`,
                 {
                     method: "GET",
@@ -89,6 +106,7 @@ const JobProvider = ({ children }) => {
             render.append("currency", data.currency)
             render.append("requirements", data.requirements)
             render.append("responsibilities", data.responsibilities)
+            // render.append("postedBy", data.postedBy)
             if (data.companyLogo && data.companyLogo[0]) {
 
                     render.append("companyLogo", data.companyLogo[0]);
@@ -98,6 +116,9 @@ const JobProvider = ({ children }) => {
             const res = await fetch(`${baseUrl}/employ/job`, {
                 method: "POST",
                 body: render,
+                headers: {
+                    'Authorization': `Bearer ${localStorage.getItem("token2")}`
+                }
             })
 
             const resData = await res.json();
@@ -165,16 +186,36 @@ const JobProvider = ({ children }) => {
         }
 
     }
-   
+
+    const deleteJobs  = async () => {
+        try {
+            const res = await fetch(`${baseUrl}/employ/All`,{
+                method: "DELETE",
+                headers: { "Content-Type": "application/json" }
+            })
+
+            const resData = await res.json()
+            console.log(resData)
+
+            if (res.ok) {
+                alert("Jobs Deleted...");
+            }
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
    
     const value = {
         displayJobs,
+        displayJobs2,
         displaySingleJobs,
         PostJob,
         saveJobs,
         postApp,
         getApp,
         confirm,
+        deleteJobs,
         apply,
         jobApp,
         save,
