@@ -9,6 +9,12 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    
   ],
-})
+
+  base: "/",
+
+  build: {
+    outDir : "dist"
+  }
+
+});
