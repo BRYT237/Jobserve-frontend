@@ -84,7 +84,7 @@ const SingleJobs = () => {
         
            {/* <button className="butS">Apply now</button> */}
            <button type="button" className="btn butS" data-bs-toggle="modal" data-bs-target="#exampleModal">
-             { JSON.parse(localStorage.getItem("status")) === apply ? "Job Applied!!" : "Apply Now" }
+            Apply Now!!
         </button>
 
         </div>
