@@ -16,13 +16,11 @@ const Dashboard = () => {
     <div className='block px-[10em] gap-[2em] my-[3em] sm:flex'>
        <div><FeaturedJobs /></div>
 
-        <div className='hidden sm:block'><SingleJobs /></div>
+        <div><SingleJobs /></div>
 
       </div>
 
-      <div className='block sm:hidden'>
-        <SingleJobs />  
-      </div>
+      
       {/*  */}
     </div>
   )
