@@ -14,10 +14,14 @@ const Dashboard = () => {
     
       <DashboardContents />
     <div className='block px-[10em] gap-[2em] my-[3em] sm:flex'>
-       <FeaturedJobs />
+       <div><FeaturedJobs /></div>
 
-      <SingleJobs />
+        <div><SingleJobs /></div>
 
+      </div>
+
+      <div className='block sm:hidden'>
+        <SingleJobs />  
       </div>
       {/*  */}
     </div>
