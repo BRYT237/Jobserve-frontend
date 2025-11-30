@@ -13,7 +13,7 @@ const Dashboard = () => {
 
     
       <DashboardContents />
-    <div className='divD'>
+    <div className='flex px-[10em] gap-[2em]'>
        <FeaturedJobs />
 
       <SingleJobs />
