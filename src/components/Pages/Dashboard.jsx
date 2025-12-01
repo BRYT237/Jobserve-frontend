@@ -8,12 +8,12 @@ import"../../CSS/featured.css"
 
 const Dashboard = () => {
   return (
-    <div>
+    <div className='flex flex-col items-center'>
       <NewHeader />
 
     
       <DashboardContents />
-    <div className='block px-[8em] gap-[3em] my-[3em] items-center sm:flex sm:px-[1em]'>
+    <div className='block px-[8em] gap-[3em] my-[3em] items-center sm:flex'>
         <div><SingleJobs /></div>
 
         <div className='mt-[2em]'><FeaturedJobs /></div>
