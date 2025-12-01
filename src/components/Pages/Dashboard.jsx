@@ -8,7 +8,7 @@ import"../../CSS/featured.css"
 
 const Dashboard = () => {
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col'>
       <NewHeader />
 
     
