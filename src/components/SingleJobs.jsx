@@ -39,7 +39,10 @@ const SingleJobs = () => {
   console.log(showSingle)
 
   return (
-    <div className="mainS">
+    <div className="border-[2px] border-[#abedab]
+      rounded-[11px] w-[350px] h-[600px] p-[1em] mx-[1em]
+      sm:w-[400px]
+    ">
 
 
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -67,8 +70,11 @@ const SingleJobs = () => {
 
 
 {/*  */}
-      <div className="subS">
-        <div className="stickS">
+      <div className="flex flex-col gap-[1em]" id="subS">
+        <div className="flex flex-col gap-[1em] my-[1em]
+          border-t-[1.5px] border-t-[#555555]/[.557] 
+         border-b-[1.5px] border-b-[#555555]/[.557] py-[1em]
+        " id="stickS">
         <h1>{showSingle?.title}</h1>
  
         <h2>{showSingle?.companyName}</h2>
@@ -89,7 +95,11 @@ const SingleJobs = () => {
 
         </div>
         {/*  */}
-        <div className="scrS">
+        <div className="h-[220px] w-[300px] overflow-x-hidden overflow-y-scroll
+          flex flex-col gap-[2em] pt-[1em]
+
+          sm:w-[360px]
+        ">
             <h3 className="h1S">Full Job Description:</h3>
             <p className="disc" name="description">
             {showSingle?.description}

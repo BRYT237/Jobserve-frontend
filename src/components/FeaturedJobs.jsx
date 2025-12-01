@@ -17,7 +17,10 @@ const FeaturedJobs =  () => {
 
 
     return(
-        <div className="mainF"> 
+        <div className="w-[390px] h-[550px] overflow-y-scroll px-[1em]
+        
+        sm:w-[500px]
+        "> 
             <h2 className="hF"> Jobs for you at JOBSERVE...</h2>
         
 
