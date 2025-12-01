@@ -13,7 +13,7 @@ const Dashboard = () => {
 
     
       <DashboardContents />
-    <div className='block px-0 gap-[3em] my-[3em] items-center sm:flex sm:px-[10em]'>
+    <div className='block px-[10em] gap-[3em] my-[3em] items-center sm:flex sm:px-[10em]'>
         <div><SingleJobs /></div>
 
         <div className='mt-[2em]'><FeaturedJobs /></div>
