@@ -28,7 +28,7 @@ const NewHeader = () => {
   return (
     <div>
        <header className='newH'>
-        <nav className='navH'>
+        <nav className='flex flex-row justify-between py-[1em]' id='navH'>
             <div className='aH'>
                     <img src={logo} alt="" width={55}/>
                     <a href="/dash">Home</a>

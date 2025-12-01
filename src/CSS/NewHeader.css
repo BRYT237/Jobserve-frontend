@@ -5,12 +5,7 @@
     padding-inline: 2%;
     
 }
-.navH{
-    display: flex;
-    flex-direction: row;
-    gap: 60%;
-    padding-block: 1%;
-
+#navH{
     a{
         color: black;
         text-decoration: none;
