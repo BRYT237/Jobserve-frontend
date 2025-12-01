@@ -16,7 +16,7 @@ const Dashboard = () => {
     <div className='block px-[10em] gap-[3em] my-[3em] items-center sm:flex'>
         <div><SingleJobs /></div>
 
-        <div className='sm:h-[800px]'><FeaturedJobs /></div>
+        <div className='mt-[2em]'><FeaturedJobs /></div>
 
 
       </div>
